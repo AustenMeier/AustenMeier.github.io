@@ -1,0 +1,206 @@
+---
+layout: post
+title:  "Section 1"
+---
+
+## Welcome to Section 1: Learning the HTML Basics and Document Structure
+
+HTML, or HyperText Markup Language, is the standard markup language used to create web pages. It serves as the backbone of web design and development, enabling the structure and presentation of content on the internet.
+
+This course is designed to introduce you to the basics and then gradually explore more advanced aspects of HTML. Each section will focus on different topics, ensuring a comprehensive understanding of web development using HTML. At the end of this course you will be creating your own custom blog post. Once you have finished this course you will move onto the next course. There is a CSS Course that you will also be taking, and that capstone project will be using css on your HTML blog post.
+
+### HTML Editors and Tools
+
+To write HTML, you can use any text editor. However, there are specialized HTML editors that provide features like syntax highlighting and auto-completion to make coding easier. Some popular HTML editors are:
+
+*   Visual Studio Code (You will be using this)
+*   Sublime Text
+*   Atom
+
+Modern web browsers also have developer tools that allow you to inspect and edit HTML and CSS in real-time. To access these tools, right-click on a webpage and select "Inspect" or press \`F12\`.
+
+### Understanding HTML Attributes
+
+HTML attributes provide additional information about HTML elements. Attributes are always included in the opening tag and usually come in name/value pairs like `name="value"`. The opening tag is the first part of an HTML element, such as `<a href="...">` for a link or `<img src="...">` for an image.
+
+Here's an example:
+
+    <a href="https://uflip.com/">Visit Example</a>
+  
+
+In this example, the `href` attribute specifies the URL of the page the link goes to. The closing tag for the link element is `</a>`.
+
+### Commonly Used HTML Tags
+
+Here are some commonly used HTML tags:
+
+*   `<a>`: Defines a hyperlink. The `href` attribute specifies the URL of the page the link goes to. Closing tag is `</a>`.
+*   `<img>`: Embeds an image. The `src` attribute specifies the path to the image file. This tag is self-closing.
+*   `<div>`: Defines a division or section in a document. You will use `<div>` a lot, but if you can substitute it with more specific semantic tags (like `<header>`, `<section>`, `<footer>`, etc.), it can make your code easier to understand and maintain. Closing tag is `</div>`.
+*   `<span>`: Defines a section in a document (inline). Closing tag is `</span>`.
+
+### Inline vs Block Elements
+
+HTML elements are either inline or block-level elements. Inline elements do not start on a new line and only take up as much width as necessary. Block-level elements always start on a new line and take up the full width available.
+
+Examples of inline elements:
+
+*   `<a>`
+*   `<span>`
+*   `<img>`
+
+Examples of block-level elements:
+
+*   `<div>`: Often used to group other elements together to style them with CSS or manipulate them with JavaScript.
+*   `<p>`: Defines a paragraph of text.
+*   `<h1> - <h6>`: Define HTML headings, with `<h1>` as the highest (or most important) level and `<h6>` as the lowest.
+
+### Basic Styling with CSS
+
+CSS (Cascading Style Sheets) is used to style and layout web pages. Even though we'll cover CSS in more detail later, here's a brief introduction on how to apply basic styles.
+
+Example of linking a CSS file:
+
+<link rel="stylesheet" href="styles.css">
+  
+
+Example of inline CSS:
+
+<p style="color: blue;">This is a blue paragraph.</p>
+  
+
+### Self-Closing Tags
+
+Some HTML tags are self-closing and do not have a closing tag. Examples include:
+
+*   `<br>`: Inserts a line break
+*   `<img>`: Embeds an image
+*   `<input>`: Defines an input field
+
+### Example of Using Semantic Elements
+
+Here's an example of how these elements can be used together in an HTML document:
+
+{% highlight html linenos %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title Here</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <!-- Navigation section -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content section -->
+    <section>
+        <h2>Main Content</h2>
+        <!-- Article within the main content -->
+        <article>
+            <h3>Article Title</h3>
+            <p>This is the main content of the article.</p>
+        </article>
+    </section>
+    <!-- Sidebar section -->
+    <aside>
+        <h3>Related Content</h3>
+        <p>This is some related content.</p>
+    </aside>
+    <!-- Footer section -->
+    <footer>
+        <p>© 2024 My Website</p>
+    </footer>
+</body>
+</html>
+  
+  {% endhighlight%}
+
+### Adding Comments to HTML
+
+Comments in HTML are added as follows and do not appear in the rendered output:
+{% highlight html linenos %}
+
+<!-- This is a comment in HTML -->
+{% endhighlight %}
+  
+
+### Linking CSS and JavaScript
+
+To make our web pages stylish and interactive, we link CSS and JavaScript files externally:
+
+{% highlight html linenos %}
+
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+  
+
+### Using HTML Entities
+
+Sometimes we need to use special characters in our text:
+
+To display a less than sign, we write &lt; which appears as <.
+To display a greater than sign, we write &gt; which appears as >.
+To display an ampersand, we write &amp; which appears as &.
+  
+
+### Starting Your First HTML Document
+
+To create an HTML document, start with the following basic structure:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+</head>
+<body>
+    <h1>Text of your choice</h1>
+    <p>Smaller text.</p>
+</body>
+</html>
+  {% endhighlight %}
+
+
+This basic structure includes:
+
+*   `<!DOCTYPE html>`: Declares the document type and version of HTML.
+*   `<html>`: The root element of an HTML document.
+*   `<head>`: Contains meta-information about the document, like the title and character set.
+*   `<title>`: Sets the title of the webpage, shown in the browser tab.
+*   `<body>`: Contains the content of the document, such as text, images, and links.
+
+### Exercise: Create a "Hello World" Web Page
+
+Create a simple HTML document that includes the following elements:
+
+*   A heading with the text "Hello World"
+*   A paragraph introducing yourself
+*   An image of your choice
+*   A hyperlink to your favorite website
+
+ Example
+    {% highlight html linenos %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>My name is \[Your Name\].</p>
+    <img src="your-image-url.jpg" alt="A description of the image">
+    <p>Visit my favorite website: <a href="https://www.example.com">Example</a></p>
+</body>
+</html>
+    {% endhighlight %}

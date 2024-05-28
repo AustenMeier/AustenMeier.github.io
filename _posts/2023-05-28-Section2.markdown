@@ -1,0 +1,137 @@
+---
+layout: post
+title: Section 2
+---
+
+## Welcome to Section 2: Semantic HTML and Advanced Layout Techniques
+
+This section will explore the importance of using semantic HTML to structure our web content effectively and improve our site's accessibility and search engine rankings. Additionally, we will look into advanced layout techniques.
+
+### What is Semantic HTML?
+
+Semantic HTML refers to the use of HTML5 elements that clearly describe their meaning in a human- and machine-readable way. These elements provide better structure and context to the content within web pages, which is beneficial for both search engines and accessibility tools like screen readers.
+
+### Why Use Semantic HTML?
+
+Semantic HTML helps clearly define the structure of web content, making it easier for search engines and assistive technologies to read and understand the information on web pages.
+
+Here are some examples of semantic HTML elements and their uses:
+
+*   `<header>`: Represents the introductory content or a set of navigational links.
+    {% highlight html linenos %}
+
+    <header>
+      <h1>Welcome to My Website</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+            
+    {% endhighlight %}
+
+*   `<nav>`: Defines a set of navigation links.
+    {% highlight html linenos %}
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+            {% endhighlight %}
+    
+*   `<article>`: Represents a self-contained composition that could be distributed independently.
+    {% highlight html linenos %}
+
+    <article>
+      <h2>Article Title</h2>
+      <p>This is the main content of the article.</p>
+    </article>
+                {% endhighlight %}
+
+    
+*   `<section>`: Defines a section in a document.
+    {% highlight html linenos %}
+
+    <section>
+      <h2>Main Section</h2>
+      <p>This is a section of the webpage.</p>
+    </section>
+                {% endhighlight %}
+
+    
+*   `<aside>`: Contains content that is tangentially related to the content around it.
+    {% highlight html linenos %}
+
+    <aside>
+      <h3>Related Content</h3>
+      <p>This is some related content.</p>
+    </aside>
+        {% endhighlight %}
+        
+    
+*   `<footer>`: Represents the footer of a document or section.
+    {% highlight html linenos %}
+
+    <footer>
+      <p>© 2024 My Website</p>
+    </footer>
+                {% endhighlight %}
+
+    
+
+Using these semantic elements improves the readability and accessibility of your HTML documents. They provide meaningful information about the structure and purpose of the content, making it easier for search engines to index your site and for screen readers to navigate it.
+
+### Exercise: Using Semantic HTML
+
+Create an HTML document that includes the following elements using semantic HTML tags:
+
+*   A `<header>` with a title and navigation links.
+*   A `<main>` section containing an `<article>` with a heading and a paragraph.
+*   A `<section>` within the `<main>` section to further organize content.
+*   An `<aside>` with related content.
+*   A `<footer>` with copyright information.
+
+Example
+
+{% highlight html linenos %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Structured Web Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Main Content</h2>
+            <article>
+                <h3>Article Title</h3>
+                <p>This is a paragraph in the main content of the article.</p>
+            </article>
+        </section>
+        <aside>
+            <h3>Related Content</h3>
+            <p>This is some related content.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>© 2024 My Web Page</footer>
+</body>
+</html>
+        {% endhighlight %}

@@ -1,0 +1,125 @@
+---
+layout: post
+title: Section 4
+---
+
+## Welcome to Section 4: HTML Forms and User Input
+
+This section we'll learn how to create interactive forms that allow users to submit information. Forms are crucial for capturing user input in various web applications.
+
+### Example Form with Basic Validation
+
+Name:   
+  
+Email:   
+  
+Age:   
+  
+Phone:   
+  
+Comment:  
+  
+
+ Example
+    {% highlight html linenos %}
+
+<form action="submit.php" method="post" id="myForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required /><br /><br />
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required /><br /><br />
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" min="16" max="100" required /><br /><br />
+
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" pattern="\[0-9\]{3}\[0-9\]{3}\[0-9\]{4}" title="Please add your area code." required /><br /><br />
+
+  <label for="comment">Comment:</label>
+  <textarea id="comment" name="comment" rows="4" required></textarea><br /><br />
+
+  <input type="submit" value="Submit" />
+</form>
+            {% endhighlight %}
+
+
+### JavaScript Interactions
+
+Add dynamic validations and interactions using JavaScript:
+    {% highlight html linenos %}
+
+<script>
+document.getElementById('myForm').onsubmit = function() {
+    let name = document.getElementById('name').value;
+    if (name.length < 4) {
+        alert('Name must be at least 4 characters long.');
+        return false;
+    }
+    return true;
+};
+</script>
+        {% endhighlight %}
+    
+
+### Exercise: Create a Form with Validation
+
+Create an HTML document that includes the following elements:
+
+*   A form with various input fields including text, email, number, tel, and textarea.
+*   Basic form validation using HTML attributes and JavaScript.
+
+Use everything from Section 1 and Section 2, and now integrate the form elements from Section 4.
+
+ Example
+    {% highlight html linenos %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Structured Web Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Main Content</h2>
+        <article>
+            <h3>Article Title</h3>
+            <p>This is a paragraph in the main content of the article.</p>
+        </article>
+    </section>
+    <aside>
+        <h3>Related Content</h3>
+        <p>This is some related content.</p>
+    </aside>
+    <section>
+        <h2>Form Example</h2>
+        <form action="submit.php" method="post" id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /><br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br /><br />
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="16" max="100" required /><br /><br />
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="\[0-9\]{3}\[0-9\]{3}\[0-9\]{4}" title="Please add your area code." required /><br /><br />
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea><br /><br />
+            <input type="submit" value="Submit" />
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 My Web Page</p>
+    </footer>
+</body>
+</html>
+        {% endhighlight %}

@@ -1,0 +1,209 @@
+---
+layout: post
+title: Section 3
+---
+## Welcome to Section 3: Text Formatting, Lists, and Tables
+
+This section we'll learn how to enhance the readability and appearance of our blog posts using various HTML tags for text formatting. We'll also explore how to effectively organize content using lists and tables.
+
+### Text Formatting Examples
+
+**Bold Text:** Use the **<strong>** tag to emphasize text.
+
+_Italic Text:_ Use the _<em>_ tag to italicize text.
+
+Underlined Text: Although not commonly recommended, you can underline text for special emphasis.
+
+Highlighted Text: Use the <mark> tag to highlight text.
+
+~Strikethrough Text:~ Use the ~<del>~ tag to show deletion.
+
+Inserted Text: Use the <ins> tag to show additions to the document.
+
+Subscript and Superscript formatting.
+
+> Blockquote:
+
+Use the `<blockquote>` tag to indicate a block of quoted text.
+
+`Inline Code:` Use the `<code>` tag to display inline code.
+
+### Lists
+
+Lists are used to group related items together:
+
+Unordered List:
+
+*   Item 1
+*   Item 2
+*   Item 3
+
+Example
+    {% highlight html linenos %}
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+        {% endhighlight %}
+
+
+Ordered List:
+
+1.  First Item
+2.  Second Item
+3.  Third Item
+
+ Example
+    {% highlight html linenos %}
+
+<ol>
+  <li>First Item</li>
+  <li>Second Item</li>
+  <li>Third Item</li>
+</ol>
+        {% endhighlight %}
+
+
+### Tables
+
+Tables are used to display tabular data:
+
+|     |     |     |
+| --- | --- | --- |Basic Table Layout
+| Column 1 | Column 2 | Column 3 |
+| --- | --- | --- |
+| Row 1, Cell 1 | Row 1, Cell 2 | Row 1, Cell 3 |
+| Row 2, Cell 1 | Row 2, Cell 2 | Row 2, Cell 3 |
+| Table Footer |     |     |
+
+ Example
+    
+    {% highlight html linenos %}
+<table border="1">
+  <caption>Basic Table Layout</caption>
+  <thead>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Row 1, Cell 1</td>
+      <td>Row 1, Cell 2</td>
+      <td>Row 1, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+      <td>Row 2, Cell 3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Table Footer</td>
+    </tr>
+  </tfoot>
+</table>
+            {% endhighlight %}
+
+### Accessibility Tips for Lists and Tables
+
+Here are some tips to make lists and tables more accessible:
+
+*   Use descriptive headings and captions for tables.
+*   Provide context and descriptions for list items.
+*   Ensure proper semantic structure for both lists and tables to aid screen readers.
+
+### Exercise: Create a Formatted Web Page
+
+Create an HTML document that includes the following elements:
+
+*   Text formatted with various HTML tags, including bold, italic, and underlined text.
+*   Both unordered and ordered lists.
+*   A table with a header, body, and footer.
+*   Use a header with navigation links, a main section, and a footer from Sections 1 and 2.
+
+ Example
+    {% highlight html linenos %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Formatted Web Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Main Content</h2>
+        <article>
+            <h3>Article Title</h3>
+            <p><strong>This is bold text.</strong> <em>This is italic text.</em> <u>This is underlined text.</u></p>
+            <blockquote>This is a blockquote.</blockquote>
+            <p>Inline code example: <code><strong>strong</strong></code></p>
+        </article>
+    </section>
+    <aside>
+        <h3>Related Content</h3>
+        <p>This is some related content.</p>
+    </aside>
+    <section>
+        <h2>Lists and Tables</h2>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ol>
+        <h3>Table</h3>
+        <table border="1">
+            <caption>Basic Table Layout</caption>
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1, Cell 1</td>
+                    <td>Row 1, Cell 2</td>
+                    <td>Row 1, Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Cell 1</td>
+                    <td>Row 2, Cell 2</td>
+                    <td>Row 2, Cell 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Table Footer</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <footer>
+        <p>© 2024 My Web Page</p>
+    </footer>
+</body>
+</html>
+        {% endhighlight %}
