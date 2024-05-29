@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Section 3
+Top: false
+type: "lessons"
 ---
 ## Welcome to Section 3: Text Formatting, Lists, and Tables
 
@@ -38,15 +40,14 @@ Unordered List:
 *   Item 2
 *   Item 3
 
-Example
-    {% highlight html linenos %}
-
-<ul>
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-</ul>
-        {% endhighlight %}
+<button class="show-example-btn">Show Example</button>
+<pre class="example-code" style="display: none;">
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
 
 
 Ordered List:
@@ -55,15 +56,14 @@ Ordered List:
 2.  Second Item
 3.  Third Item
 
- Example
-    {% highlight html linenos %}
-
-<ol>
-  <li>First Item</li>
-  <li>Second Item</li>
-  <li>Third Item</li>
-</ol>
-        {% endhighlight %}
+  <button class="show-example-btn">Show Example</button>
+<pre class="example-code" style="display: none;">
+&lt;ol&gt;
+  &lt;li&gt;First Item&lt;/li&gt;
+  &lt;li&gt;Second Item&lt;/li&gt;
+  &lt;li&gt;Third Item&lt;/li&gt;
+&lt;/ol&gt;
+    </pre>
 
 
 ### Tables
@@ -97,37 +97,36 @@ Tables are used to display tabular data:
     </tr>
   </tfoot>
 </table>
- Example
-    
-    {% highlight html linenos %}
-<table border="1">
-  <caption>Basic Table Layout</caption>
-  <thead>
-    <tr>
-      <th>Column 1</th>
-      <th>Column 2</th>
-      <th>Column 3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Row 1, Cell 1</td>
-      <td>Row 1, Cell 2</td>
-      <td>Row 1, Cell 3</td>
-    </tr>
-    <tr>
-      <td>Row 2, Cell 1</td>
-      <td>Row 2, Cell 2</td>
-      <td>Row 2, Cell 3</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="3">Table Footer</td>
-    </tr>
-  </tfoot>
-</table>
-            {% endhighlight %}
+  <button class="show-example-btn">Show Example</button>
+<pre class="example-code" style="display: none;">
+&lt;table border="1"&gt;
+  &lt;caption&gt;Basic Table Layout&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Column 1&lt;/th&gt;
+      &lt;th&gt;Column 2&lt;/th&gt;
+      &lt;th&gt;Column 3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+      &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+      &lt;td&gt;Row 1, Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+      &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+      &lt;td&gt;Row 2, Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td colspan="3"&gt;Table Footer&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+    </pre>
 
 ### Accessibility Tips for Lists and Tables
 
@@ -146,83 +145,83 @@ Create an HTML document that includes the following elements:
 *   A table with a header, body, and footer.
 *   Use a header with navigation links, a main section, and a footer from Sections 1 and 2.
 
- Example
-    {% highlight html linenos %}
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Formatted Web Page</title>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Web Page</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <h2>Main Content</h2>
-        <article>
-            <h3>Article Title</h3>
-            <p><strong>This is bold text.</strong> <em>This is italic text.</em> <u>This is underlined text.</u></p>
-            <blockquote>This is a blockquote.</blockquote>
-            <p>Inline code example: <code><strong>strong</strong></code></p>
-        </article>
-    </section>
-    <aside>
-        <h3>Related Content</h3>
-        <p>This is some related content.</p>
-    </aside>
-    <section>
-        <h2>Lists and Tables</h2>
-        <h3>Unordered List</h3>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-        <h3>Ordered List</h3>
-        <ol>
-            <li>First Item</li>
-            <li>Second Item</li>
-            <li>Third Item</li>
-        </ol>
-        <h3>Table</h3>
-        <table border="1">
-            <caption>Basic Table Layout</caption>
-            <thead>
-                <tr>
-                    <th>Column 1</th>
-                    <th>Column 2</th>
-                    <th>Column 3</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Row 1, Cell 1</td>
-                    <td>Row 1, Cell 2</td>
-                    <td>Row 1, Cell 3</td>
-                </tr>
-                <tr>
-                    <td>Row 2, Cell 1</td>
-                    <td>Row 2, Cell 2</td>
-                    <td>Row 2, Cell 3</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3">Table Footer</td>
-                </tr>
-            </tfoot>
-        </table>
-    </section>
-    <footer>
-        <p>© 2024 My Web Page</p>
-    </footer>
-</body>
-</html>
-        {% endhighlight %}
+  <button class="show-example-btn">Show Example</button>
+<pre class="example-code" style="display: none;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Formatted Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Main Content&lt;/h2&gt;
+        &lt;article&gt;
+            &lt;h3&gt;Article Title&lt;/h3&gt;
+            &lt;p&gt;&lt;strong&gt;This is bold text.&lt;/strong&gt; &lt;em&gt;This is italic text.&lt;/em&gt; &lt;u&gt;This is underlined text.&lt;/u&gt;&lt;/p&gt;
+            &lt;blockquote&gt;This is a blockquote.&lt;/blockquote&gt;
+            &lt;p&gt;Inline code example: &lt;code&gt;&lt;strong&gt;strong&lt;/strong&gt;&lt;/code&gt;&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+    &lt;aside&gt;
+        &lt;h3&gt;Related Content&lt;/h3&gt;
+        &lt;p&gt;This is some related content.&lt;/p&gt;
+    &lt;/aside&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Lists and Tables&lt;/h2&gt;
+        &lt;h3&gt;Unordered List&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Item 1&lt;/li&gt;
+            &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;h3&gt;Ordered List&lt;/h3&gt;
+        &lt;ol&gt;
+            &lt;li&gt;First Item&lt;/li&gt;
+            &lt;li&gt;Second Item&lt;/li&gt;
+            &lt;li&gt;Third Item&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;h3&gt;Table&lt;/h3&gt;
+        &lt;table border="1"&gt;
+            &lt;caption&gt;Basic Table Layout&lt;/caption&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Column 1&lt;/th&gt;
+                    &lt;th&gt;Column 2&lt;/th&gt;
+                    &lt;th&gt;Column 3&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+                    &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+                    &lt;td&gt;Row 1, Cell 3&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+                    &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+                    &lt;td&gt;Row 2, Cell 3&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+            &lt;tfoot&gt;
+                &lt;tr&gt;
+                    &lt;td colspan="3"&gt;Table Footer&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tfoot&gt;
+        &lt;/table&gt;
+    &lt;/section&gt;
+    &lt;footer&gt;
+        &lt;p&gt;© 2024 My Web Page&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>

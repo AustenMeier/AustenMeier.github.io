@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Keyboard Shortcuts"
+Top: True
+type: "References"
 ---
 
 ## Keyboard Shortcuts For Windows and Mac

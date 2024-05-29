@@ -1,6 +1,8 @@
 ---
 layout: post
 title: HTTP messages
+Top: false
+type: "References"
 ---
 ## HTML Error Messages
 

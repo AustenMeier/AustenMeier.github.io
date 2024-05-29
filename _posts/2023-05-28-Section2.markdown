@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Section 2
+Top: false
+type: "lessons"
 ---
 
 ## Welcome to Section 2: Semantic HTML and Advanced Layout Techniques
@@ -97,41 +99,40 @@ Create an HTML document that includes the following elements using semantic HTML
 *   An `<aside>` with related content.
 *   A `<footer>` with copyright information.
 
-Example
 
-{% highlight html linenos %}
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Structured Web Page</title>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Web Page</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Main Content</h2>
-            <article>
-                <h3>Article Title</h3>
-                <p>This is a paragraph in the main content of the article.</p>
-            </article>
-        </section>
-        <aside>
-            <h3>Related Content</h3>
-            <p>This is some related content.</p>
-        </aside>
-    </main>
-    <footer>
-        <p>© 2024 My Web Page</footer>
-</body>
-</html>
-        {% endhighlight %}
+    <button class="show-example-btn">Show Example</button>
+    <pre class="example-code" style="display: none;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Structured Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Main Content&lt;/h2&gt;
+            &lt;article&gt;
+                &lt;h3&gt;Article Title&lt;/h3&gt;
+                &lt;p&gt;This is a paragraph in the main content of the article.&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+        &lt;aside&gt;
+            &lt;h3&gt;Related Content&lt;/h3&gt;
+            &lt;p&gt;This is some related content.&lt;/p&gt;
+        &lt;/aside&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;© 2024 My Web Page&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>

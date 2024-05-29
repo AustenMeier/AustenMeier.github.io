@@ -1,10 +1,17 @@
 ---
 layout: post
 title: My Profile
+Top: true
+type: "Projects"
 ---
-[![User Profile Picture](/src/img/profile.jpg)](#)
-
-**YounglingSlayer22**
+  <a href="#">
+      <img
+        src="/src/img/profile.jpg"
+        alt="User Profile Picture"
+        width="100"
+        height="100"
+      />
+    </a>
 
 **Ani**
 
@@ -56,13 +63,13 @@ SEO Best Practices [❤](#) [💬](#) [Share](#)
 
   
 
- <video width="280" height="157" controls muted>
-        <source
-          src="/src/img/You were my brother Anakin! I loved you....mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
+<figure>
+  <video controls width="300">
+    <source src="/src/img/You-were-my-brother-Anakin-I-Loved-you.mp4" type="video/mp4" />
+  </video>
+  <figcaption>Figure 2: This is an example of an embedded video.</figcaption>
+</figure>
+
 I can't believe this happened! [❤](#) [💬](#) [Share](#)
 
   
@@ -71,17 +78,34 @@ I can't believe this happened! [❤](#) [💬](#) [Share](#)
 
 ## Suggested Accounts:
 
-![User 1](/src/img/user1.jpg)
+ <img
+        src="/src/img/user1.jpg"
+        alt="User 1"
+        width="150"
+        height="150"
+        alt="Picture of Mark Hamill aka Luke Skywalker"
+      />
 
 **Luke Skywalker**  
 Bio: Lover of CSS and design. I like to give a good Chuckle. [Follow](javascript:void(0);)
 
-![User 2](/src/img/user2.png)
+   <img
+        src="/src/img/user2.png"
+        alt="User 2"
+        width="150"
+        height="150"
+        alt="Picture of Yoda"
+      />
 
 **Yoda**  
 Bio: Enthusiast of JavaScript I am. Sometimes shrouded judgement is. [Follow](javascript:void(0);)
 
-![User 3](/src/img/user3.jpg)
-
+<img
+        src="/src/img/user3.jpg"
+        alt="User 3"
+        width="150"
+        height="150"
+        alt="Picture of Obi-Wan Kenobi"
+      />
 **Obi-Wan Kenobi**  
 Bio: I prefer a more civilized approach. Backend guru and database wizard. Always on the hunt for Data Linking. [Follow](javascript:void(0);)

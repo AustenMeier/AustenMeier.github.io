@@ -2,6 +2,22 @@
 ---
 
 <style>
+  /* Unique color values */
+/* #444;
+#fff;
+#232323;
+#00cdff;
+#bebcbc;
+#1c75bc;
+#e55440;
+#febd1d;
+#89d99d;
+#575757;
+#b3b3b3;
+#d78d24;
+rgba(35, 35, 35, 0.95);
+rgba(0, 205, 255, 0.4);
+rgba(254, 189, 29, 0.9); */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -10,7 +26,13 @@ body {
   background-color: #444;
   color: #fff;
 }
-
+button{
+  background-color: #1c75bc;
+  color: #fff;
+  display: block;
+  padding: 9px;
+  border-bottom: 1px solid #444;
+}
 header {
   background: #1c75bc;
   color: #fff;
@@ -45,6 +67,8 @@ nav ul {
 
 nav ul li {
   margin: 1.9px;
+  border-bottom: 1px solid #444;
+
 }
 
 nav ul li a {
@@ -52,7 +76,6 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 9px;
-  border-bottom: 1px solid #444;
   transition: background 0.3s, color 0.3s;
   text-align: center;
 }
@@ -108,11 +131,12 @@ footer p {
 
 <body>
     <header>
-        <h1>Welcome to HTML COURSE! </h1>
+        <h1>HTML COURSE! </h1>
         <nav>
           <ul>
             <li><a href="/index.html" {% if page.name == "index.markdown"%}class="active"{% endif %}>Home</a></li>
                 {% for post in site.posts %} 
+                {% if post.Top == true %} <li><h2>{{post.type}}</h2></li> {% endif %}
                 <li><a href="{{post.url}}" {% if post.name == page.name %}class="active"{% endif %}>{{post.title}}</a></li>
                 {% endfor %}
           </ul>
@@ -121,7 +145,27 @@ footer p {
   
     <main>
         {{content}}
-    </main>
+      </main>
+      <br>
+<script>
+  let exampleButtons = document
+    .querySelectorAll(".show-example-btn")
+    exampleButtons.forEach((element, index) => {
+      element
+      .addEventListener("click", function () {
+        let exampleCode = document.querySelectorAll(".example-code");          
+          if (exampleCode[index].style.display === "none") {
+            exampleCode[index].style.display = "block";
+            element.textContent = "Hide Example";
+            exampleCode[index].scrollIntoView();
+          } else {
+            exampleCode[index].style.display = "none";
+            element.textContent = "Show Example";
+
+          }
+      });
+    });
+</script>
     <footer>
         <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
       </footer>

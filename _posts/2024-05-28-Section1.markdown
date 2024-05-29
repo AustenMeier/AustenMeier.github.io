@@ -1,13 +1,11 @@
 ---
 layout: post
 title:  "Section 1"
+Top: true
+type: "lessons"
 ---
 
 ## Welcome to Section 1: Learning the HTML Basics and Document Structure
-
-HTML, or HyperText Markup Language, is the standard markup language used to create web pages. It serves as the backbone of web design and development, enabling the structure and presentation of content on the internet.
-
-This course is designed to introduce you to the basics and then gradually explore more advanced aspects of HTML. Each section will focus on different topics, ensuring a comprehensive understanding of web development using HTML. At the end of this course you will be creating your own custom blog post. Once you have finished this course you will move onto the next course. There is a CSS Course that you will also be taking, and that capstone project will be using css on your HTML blog post.
 
 ### HTML Editors and Tools
 
@@ -186,21 +184,18 @@ Create a simple HTML document that includes the following elements:
 *   An image of your choice
 *   A hyperlink to your favorite website
 
- Example
-    {% highlight html linenos %}
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Hello World</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-    <p>My name is \[Your Name\].</p>
-    <img src="your-image-url.jpg" alt="A description of the image">
-    <p>Visit my favorite website: <a href="https://www.example.com">Example</a></p>
-</body>
-</html>
-
-
-
-  {% endhighlight %}
+<button class="show-example-btn">Show Example</button>
+  <pre class="example-code" style="display: none">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Hello World&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;p&gt;My name is [Your Name].&lt;/p&gt;
+    &lt;img src="your-image-url.jpg" alt="A description of the image"&gt;
+    &lt;p&gt;Visit my favorite website: &lt;a href="https://www.example.com"&gt;Example&lt;/a&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Section 4
+Top: false
+type: "lessons"
 ---
 
 ## Welcome to Section 4: HTML Forms and User Input
@@ -29,28 +31,27 @@ This section we'll learn how to create interactive forms that allow users to sub
 </form>
   
 
- Example
-    {% highlight html linenos %}
+ <button class="show-example-btn">Show Example</button>
+ <pre class="example-code" style="display: none;">
+&lt;form action="submit.php" method="post" id="myForm"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" required /&gt;&lt;br /&gt;&lt;br /&gt;
 
-<form action="submit.php" method="post" id="myForm">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required /><br /><br />
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required /&gt;&lt;br /&gt;&lt;br /&gt;
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required /><br /><br />
+  &lt;label for="age"&gt;Age:&lt;/label&gt;
+  &lt;input type="number" id="age" name="age" min="16" max="100" required /&gt;&lt;br /&gt;&lt;br /&gt;
 
-  <label for="age">Age:</label>
-  <input type="number" id="age" name="age" min="16" max="100" required /><br /><br />
+  &lt;label for="phone"&gt;Phone:&lt;/label&gt;
+  &lt;input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please add your area code." required /&gt;&lt;br /&gt;&lt;br /&gt;
 
-  <label for="phone">Phone:</label>
-  <input type="tel" id="phone" name="phone" pattern="\[0-9\]{3}\[0-9\]{3}\[0-9\]{4}" title="Please add your area code." required /><br /><br />
+  &lt;label for="comment"&gt;Comment:&lt;/label&gt;
+  &lt;textarea id="comment" name="comment" rows="4" required&gt;&lt;/textarea&gt;&lt;br /&gt;&lt;br /&gt;
 
-  <label for="comment">Comment:</label>
-  <textarea id="comment" name="comment" rows="4" required></textarea><br /><br />
-
-  <input type="submit" value="Submit" />
-</form>
-            {% endhighlight %}
+  &lt;input type="submit" value="Submit" /&gt;
+&lt;/form&gt;
+    </pre>
 
 
 ### JavaScript Interactions
@@ -80,55 +81,54 @@ Create an HTML document that includes the following elements:
 
 Use everything from Section 1 and Section 2, and now integrate the form elements from Section 4.
 
- Example
-    {% highlight html linenos %}
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Structured Web Page</title>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Web Page</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <h2>Main Content</h2>
-        <article>
-            <h3>Article Title</h3>
-            <p>This is a paragraph in the main content of the article.</p>
-        </article>
-    </section>
-    <aside>
-        <h3>Related Content</h3>
-        <p>This is some related content.</p>
-    </aside>
-    <section>
-        <h2>Form Example</h2>
-        <form action="submit.php" method="post" id="myForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required /><br /><br />
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required /><br /><br />
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="16" max="100" required /><br /><br />
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" pattern="\[0-9\]{3}\[0-9\]{3}\[0-9\]{4}" title="Please add your area code." required /><br /><br />
-            <label for="comment">Comment:</label>
-            <textarea id="comment" name="comment" rows="4" required></textarea><br /><br />
-            <input type="submit" value="Submit" />
-        </form>
-    </section>
-    <footer>
-        <p>© 2024 My Web Page</p>
-    </footer>
-</body>
-</html>
-        {% endhighlight %}
+  <button class="show-example-btn">Show Example</button>
+  <pre class="example-code" style="display: none;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Structured Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Main Content&lt;/h2&gt;
+        &lt;article&gt;
+            &lt;h3&gt;Article Title&lt;/h3&gt;
+            &lt;p&gt;This is a paragraph in the main content of the article.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+    &lt;aside&gt;
+        &lt;h3&gt;Related Content&lt;/h3&gt;
+        &lt;p&gt;This is some related content.&lt;/p&gt;
+    &lt;/aside&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Form Example&lt;/h2&gt;
+        &lt;form action="submit.php" method="post" id="myForm"&gt;
+            &lt;label for="name"&gt;Name:&lt;/label&gt;
+            &lt;input type="text" id="name" name="name" required /&gt;&lt;br /&gt;&lt;br /&gt;
+            &lt;label for="email"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email" required /&gt;&lt;br /&gt;&lt;br /&gt;
+            &lt;label for="age"&gt;Age:&lt;/label&gt;
+            &lt;input type="number" id="age" name="age" min="16" max="100" required /&gt;&lt;br /&gt;&lt;br /&gt;
+            &lt;label for="phone"&gt;Phone:&lt;/label&gt;
+            &lt;input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please add your area code." required /&gt;&lt;br /&gt;&lt;br /&gt;
+            &lt;label for="comment"&gt;Comment:&lt;/label&gt;
+            &lt;textarea id="comment" name="comment" rows="4" required&gt;&lt;/textarea&gt;&lt;br /&gt;&lt;br /&gt;
+            &lt;input type="submit" value="Submit" /&gt;
+        &lt;/form&gt;
+    &lt;/section&gt;
+    &lt;footer&gt;
+        &lt;p&gt;© 2024 My Web Page&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
