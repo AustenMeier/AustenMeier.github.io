@@ -61,13 +61,11 @@ CSS (Cascading Style Sheets) is used to style and layout web pages. Even though 
 
 Example of linking a CSS file:
 
-<link rel="stylesheet" href="styles.css">
-  
+`<link rel="stylesheet" href="styles.css">`
 
 Example of inline CSS:
 
-<p style="color: blue;">This is a blue paragraph.</p>
-  
+`<p style="color: blue;">This is a blue paragraph.</p>`
 
 ### Self-Closing Tags
 
@@ -121,16 +119,14 @@ Here's an example of how these elements can be used together in an HTML document
     </footer>
 </body>
 </html>
-  
-  {% endhighlight%}
+{% endhighlight %}
 
 ### Adding Comments to HTML
 
 Comments in HTML are added as follows and do not appear in the rendered output:
-{% highlight html linenos %}
 
-<!-- This is a comment in HTML -->
-{% endhighlight %}
+`<!-- This is a comment in HTML -->`
+
   
 
 ### Linking CSS and JavaScript
@@ -141,7 +137,7 @@ To make our web pages stylish and interactive, we link CSS and JavaScript files 
 
 <link rel="stylesheet" href="styles.css">
 <script src="script.js"></script>
-  
+{% endhighlight %}
 
 ### Using HTML Entities
 
@@ -156,6 +152,8 @@ To display an ampersand, we write &amp; which appears as &.
 
 To create an HTML document, start with the following basic structure:
 
+{% highlight html linenos %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -168,7 +166,7 @@ To create an HTML document, start with the following basic structure:
     <p>Smaller text.</p>
 </body>
 </html>
-  {% endhighlight %}
+{% endhighlight %}
 
 
 This basic structure includes:
@@ -190,7 +188,6 @@ Create a simple HTML document that includes the following elements:
 
  Example
     {% highlight html linenos %}
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -203,4 +200,7 @@ Create a simple HTML document that includes the following elements:
     <p>Visit my favorite website: <a href="https://www.example.com">Example</a></p>
 </body>
 </html>
-    {% endhighlight %}
+
+
+
+  {% endhighlight %}

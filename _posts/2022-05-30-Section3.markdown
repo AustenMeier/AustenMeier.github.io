@@ -8,17 +8,17 @@ This section we'll learn how to enhance the readability and appearance of our bl
 
 ### Text Formatting Examples
 
-**Bold Text:** Use the **<strong>** tag to emphasize text.
+**Bold Text:** Use the `<strong>` tag to emphasize text.
 
-_Italic Text:_ Use the _<em>_ tag to italicize text.
+_Italic Text:_ Use the `<em>` tag to italicize text.
 
 Underlined Text: Although not commonly recommended, you can underline text for special emphasis.
 
-Highlighted Text: Use the <mark> tag to highlight text.
+<mark>Highlighted Text</mark>: Use the `<mark>` tag to highlight text.
 
-~Strikethrough Text:~ Use the ~<del>~ tag to show deletion.
+<del>Strikethrough Text</del>: Use the `<del>` tag to show deletion.
 
-Inserted Text: Use the <ins> tag to show additions to the document.
+<ins>Inserted Text</ins>: Use the `<ins>` tag to show additions to the document.
 
 Subscript and Superscript formatting.
 
@@ -70,14 +70,33 @@ Ordered List:
 
 Tables are used to display tabular data:
 
-|     |     |     |
-| --- | --- | --- |Basic Table Layout
-| Column 1 | Column 2 | Column 3 |
-| --- | --- | --- |
-| Row 1, Cell 1 | Row 1, Cell 2 | Row 1, Cell 3 |
-| Row 2, Cell 1 | Row 2, Cell 2 | Row 2, Cell 3 |
-| Table Footer |     |     |
-
+<table border="1">
+  <caption>Basic Table Layout</caption>
+  <thead>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Row 1, Cell 1</td>
+      <td>Row 1, Cell 2</td>
+      <td>Row 1, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+      <td>Row 2, Cell 3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Table Footer</td>
+    </tr>
+  </tfoot>
+</table>
  Example
     
     {% highlight html linenos %}
