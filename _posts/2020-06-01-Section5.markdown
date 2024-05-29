@@ -10,7 +10,7 @@ This section we'll explore the importance of using semantic HTML to structure ou
 
 Embedding multimedia like images, videos, and audio not only enhances the user experience but also keeps users engaged longer on your site.
 
-![Multimedia Example](src/img/MMWDEX.jpg)
+![Multimedia Example](\src\img\MMWDEX.jpg)
 
 Figure 1: This is an example of an embedded image.
 
