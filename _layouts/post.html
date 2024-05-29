@@ -111,9 +111,9 @@ footer p {
         <h1>Welcome to HTML COURSE! </h1>
         <nav>
           <ul>
-            <li><a href="/index.html" class="active">Home</a></li>
+            <li><a href="/index.html" {% if page.name == "index.markdown"%}class="active"{% endif %}>Home</a></li>
                 {% for post in site.posts %} 
-                <li><a href="{{post.url}}">{{post.title}}</a></li>
+                <li><a href="{{post.url}}" {% if post.name == page.name %}class="active"{% endif %}>{{post.title}}</a></li>
                 {% endfor %}
           </ul>
         </nav>
