@@ -1,0 +1,37 @@
+<style>
+    body{
+        background-color: brown;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <textarea id="cnsl" cols=145 rows=20></textarea>
+          <button onclick="run();">run</button>
+          <div class="html_area"></div>
+          
+          <script>
+             //script area
+    function run() {
+    let el = document.getElementById('cnsl');
+    let scriptText = el.value;
+    let oldScript = document.getElementById('scriptContainer');
+    let newScript;
+    
+    if (oldScript) {
+      oldScript.parentNode.removeChild(oldScript);
+    }
+    console.log(document.querySelector("main"))
+    newScript = document.createElement('div');
+    newScript.id = 'scriptContainer';
+    newScript.innerHTML = el.value;
+    document.querySelector(".html_area").appendChild(newScript);
+}
+          </script>
+</body>
+</html>

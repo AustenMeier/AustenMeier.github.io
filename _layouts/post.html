@@ -39,13 +39,36 @@ header {
   padding: 1em;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%
+}
+.open_button_container{
+  position: fixed;
+  text-align: center;
+  padding: 1em 0;
+  bottom: 0;
+  height: 100%;
+  width: 1%
 }
 
 header h1 {
   margin: 0;
   font-size: 2em;
 }
-
+.open_button{
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-bottom: 80px;
+  background: #00cdff;
+}
+.close_button {
+  width: 1%;
+  height: 100%;
+  background: #00cdff;
+  position: fixed;
+  margin-left: 180px;
+}
 nav {
   position: fixed;
   top: 0;
@@ -59,6 +82,12 @@ nav {
   overflow-y: auto; /* Allows scrolling if content is too long */
 }
 
+.show {
+  display: block
+}
+.hidden {
+  display: none
+}
 nav ul {
   list-style: none;
   padding: 0;
@@ -67,17 +96,17 @@ nav ul {
 
 nav ul li {
   margin: 1.9px;
-  border-bottom: 1px solid #444;
-
 }
 
-nav ul li a {
+
+nav ul li a, h2 {
   display: block;
   color: #fff;
   text-decoration: none;
   padding: 9px;
   transition: background 0.3s, color 0.3s;
   text-align: center;
+  border-bottom: 1px solid #444;
 }
 
 nav ul li a:hover,
@@ -118,9 +147,12 @@ footer {
   padding: 1em 0;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  left: 430;
+  width: 50%;
   border-top: 1px solid #444;
 }
+
+
 
 footer p {
   margin: 0;
@@ -132,22 +164,36 @@ footer p {
 <body>
     <header>
         <h1>HTML COURSE! </h1>
-        <nav>
+        <nav class="nav_bar show">
           <ul>
             <li><a href="/index.html" {% if page.name == "index.markdown"%}class="active"{% endif %}>Home</a></li>
                 {% for post in site.posts %} 
                 {% if post.Top == true %} <li><h2>{{post.type}}</h2></li> {% endif %}
                 <li><a href="{{post.url}}" {% if post.name == page.name %}class="active"{% endif %}>{{post.title}}</a></li>
                 {% endfor %}
-          </ul>
-        </nav>
-      </header>
-  
-    <main>
-        {{content}}
-      </main>
+              </div>
+            </ul>
+          </nav>
+        </header>
+        <button class="close_button"></button>
+        <br>
+        <br>
+        <main>
+          {{content}}
+        </main>
+        <br>
+      <div class="open_button_container">
+        <button class="hidden open_Button"></button>
+      </div>
       <br>
+      <br>
+      <br>
+      <footer>
+          <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+        </footer>
 <script>
+
+  //Example Buttons
   let exampleButtons = document
     .querySelectorAll(".show-example-btn")
     exampleButtons.forEach((element, index) => {
@@ -165,8 +211,22 @@ footer p {
           }
       });
     });
+
+    let closeButton = document.querySelector(".close_button")
+    let navBar = document.querySelector(".nav_bar")
+    let closeButtonContainer = document.querySelector(".close_button_container")
+    //Close Button
+    closeButton.addEventListener("click", function(){
+      navBar.className = "nav_bar hidden"
+      OpenButton.className = "open_Button show"
+      closeButton.className = "close_Button hidden"
+    })
+    //Open Button
+    let OpenButton = document.querySelector(".open_Button")
+    OpenButton.addEventListener("click", function(){
+      navBar.className = "nav_bar show"
+      OpenButton.className = "open_Button hidden"
+      closeButton.className = "close_Button show"
+    })
 </script>
-    <footer>
-        <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
-      </footer>
 </body>
