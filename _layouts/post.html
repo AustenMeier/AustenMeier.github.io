@@ -185,7 +185,7 @@ footer p {
             {% for post in site.posts %} 
             {% if post.Top == true %} <li><h2>{{post.type}}</h2></li> {% endif %}
             {% if post.name == page.name %}
-            <li><a href="{{post.url}}" class="active">{{page.name}}</a></li>
+            <li><a href="{{post.url}}" class="active">{{post.name}}</a></li>
             {% endif %}
             {% if post.name != page.name %}
             <li><a href="{{post.url}}">{{page.test}}</a></li>
