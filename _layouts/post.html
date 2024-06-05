@@ -184,11 +184,11 @@ footer p {
             <li><a href="/index.html" {% if page.name == "index.markdown"%}class="active"{% endif %}>Home</a></li>
             {% for post in site.posts %} 
             {% if post.Top == true %} <li><h2>{{post.type}}</h2></li> {% endif %}
-            {% if post.name == page.name %}
-            <li><a href="{{post.url}}" class="active">{{post.name}}</a></li>
+            {% if post.id == page.id %}
+            <li><a href="{{post.url}}" class="active">{{page.id}}</a></li>
             {% endif %}
-            {% if post.name != page.name %}
-            <li><a href="{{post.url}}">{{page.test}}</a></li>
+            {% if post.id != page.id %}
+            <li><a href="{{post.url}}">{{post.id}}</a></li>
             {% endif %}
                 {% endfor %}
               </div>

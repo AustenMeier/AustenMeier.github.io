@@ -3,6 +3,7 @@ layout: post
 title: Section 4
 Top: false
 type: "lessons"
+id: /2024/05/29/Section4
 ---
 
 ## Welcome to Section 4: HTML Forms and User Input

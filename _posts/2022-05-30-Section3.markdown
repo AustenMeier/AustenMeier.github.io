@@ -3,6 +3,7 @@ layout: post
 title: Section 3
 Top: false
 type: "lessons"
+id: /2024/05/29/Section3
 ---
 ## Welcome to Section 3: Text Formatting, Lists, and Tables
 

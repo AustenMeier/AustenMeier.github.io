@@ -3,6 +3,7 @@ layout: post
 title: My Profile
 Top: true
 type: "Projects"
+id: /2024/05/29/myProfile
 ---
   <a href="#">
       <img

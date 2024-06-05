@@ -3,6 +3,7 @@ layout: post
 title:  "Keyboard Shortcuts"
 Top: True
 type: "References"
+id: /2024/05/29/Keyboard-shortcuts
 ---
 
 ## Keyboard Shortcuts For Windows and Mac
