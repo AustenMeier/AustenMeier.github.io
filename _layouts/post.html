@@ -123,7 +123,7 @@ nav ul li a.active {
 main {
   /* float:left; */
   margin-top: 245px;
-  margin-left: 500px; /* Space for the vertical nav */
+  margin-left: 240px; /* Space for the vertical nav */
   padding: 2em 1em;
   align-items: center;
 }
@@ -159,7 +159,7 @@ footer {
   padding: 1em 0;
   position: fixed;
   bottom: 0;
-  margin-left: 640px;
+  left: 295;
   width: 50%;
   border-top: 1px solid #444;
 }
@@ -178,7 +178,7 @@ footer p {
       <!-- <h1>HTML COURSE! </h1> -->
       <img src="/src/img/Codemakers logo 1.png" alt="" width="600" height="200">
         <h1>HTML COURSE! </h1>
-        <nav class="nav_bar show">
+        <nav class="nav_bar hidden">
           <ul>
             <li><a href="/index.html" {% if page.name == "index.markdown"%}class="active"{% endif %}>Home</a></li>
                 {% for post in site.posts %} 
@@ -189,7 +189,7 @@ footer p {
             </ul>
           </nav>
         </header>
-        <button class="close_button"></button>
+        <button class="close_button hidden"></button>
         <br>
         <br>
         <main>
@@ -197,7 +197,7 @@ footer p {
         </main>
         <br>
       <div class="open_button_container">
-        <button class="hidden open_Button"></button>
+        <button class="open_Button"></button>
       </div>
       <br>
       <br>
