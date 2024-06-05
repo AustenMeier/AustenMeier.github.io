@@ -3,7 +3,7 @@ layout: post
 title: HTTP messages
 Top: false
 type: "References"
-id: /2024/05/29/http-messages
+id: /2024/05/28/http-messages
 ---
 ## HTML Error Messages
 
